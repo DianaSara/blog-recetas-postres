@@ -1,4 +1,4 @@
-/* Selector universal: Aplica estilos básicos a todos los elementos */
+/* Estilos base: Se aplican a todos los dispositivos */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +11,30 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #fff9f2;
+    padding: 10px;
+}
+
+/* Estilo general para tamaños de escritorio (default) */
+section#recetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 1024px) and (auto-fit, minmax(300px, 1fr)){
+    body{
+        padding: 15px;
+    }    
+
+    section#recetas{
+        grid-template-columns: repeat(2, 1fr); /*Dos columnas/*
+    }
+    
+}
+
+article{
+    max-height: 300px;
+    margin: 0 auto;
 }
 
 /* Header */
