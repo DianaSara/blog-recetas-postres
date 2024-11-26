@@ -42,7 +42,7 @@ a:hover {
     color: #e64a19;
 }
 
-/* Main Content */
+/* Contenido Main */
 main {
     padding: 20px;
 }
@@ -131,7 +131,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) and (min-width: 768px) {
     body {
         padding: 15px;
